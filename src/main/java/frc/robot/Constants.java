@@ -40,9 +40,9 @@ public final class Constants
   public static final class Auton
   {
 
-    public static final PIDFConfig xAutoPID     = new PIDFConfig(0.7, 0, 0);
-    public static final PIDFConfig yAutoPID     = new PIDFConfig(0.7, 0, 0);
-    public static final PIDFConfig angleAutoPID = new PIDFConfig(0.4, 0, 0.01);
+    public static final PIDFConfig xAutoPID     = new PIDFConfig(0, 0, 0);
+    public static final PIDFConfig yAutoPID     = new PIDFConfig(0, 0, 0);
+    public static final PIDFConfig angleAutoPID = new PIDFConfig(0, 0, 0);
 
     public static final double MAX_SPEED        = 4.6;
     public static final double MAX_ACCELERATION = 2;
@@ -80,8 +80,8 @@ public final class Constants
     }
 
     public static final HolonomicPathFollowerConfig pathFollowerConfig = new HolonomicPathFollowerConfig(
-      new PIDConstants(0.7, 0, 0), // Translation constants 
-      new PIDConstants(0.4, 0, 0.01), // Rotation constants 
+      new PIDConstants(0, 0, 0), // Translation constants 
+      new PIDConstants(0.004, 0, 0), // Rotation constants 
       Auton.MAX_SPEED, 
       ROBORADIUS, // Drive base radius (distance from center to furthest module) 
       new ReplanningConfig()
