@@ -50,6 +50,7 @@
       "/LiveWindow/Ungrouped/PIDController[1]": "PIDController",
       "/LiveWindow/Ungrouped/Pigeon 2 [13]": "Gyro",
       "/LiveWindow/Ungrouped/Scheduler": "Scheduler",
+      "/SmartDashboard/Auto Chooser": "String Chooser",
       "/SmartDashboard/Auto Mode": "String Chooser",
       "/SmartDashboard/Example Auto": "Command",
       "/SmartDashboard/Field": "Field2d",
@@ -62,6 +63,11 @@
       "/SmartDashboard/navX-Sensor[1]": "Gyro"
     },
     "windows": {
+      "/SmartDashboard/Auto Chooser": {
+        "window": {
+          "visible": true
+        }
+      },
       "/SmartDashboard/Field": {
         "XModules": {
           "arrowColor": [
