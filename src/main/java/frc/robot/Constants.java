@@ -61,6 +61,7 @@ public final class Constants
     // Joystick Deadband
     public static final double LEFT_X_DEADBAND = 0.01;
     public static final double LEFT_Y_DEADBAND = 0.01;
+    public static final double TURN_CONSTANT = 6;
   }
 
   public static class Vision {
@@ -81,7 +82,7 @@ public final class Constants
 
     public static final HolonomicPathFollowerConfig pathFollowerConfig = new HolonomicPathFollowerConfig(
       new PIDConstants(0, 0, 0), // Translation constants 
-      new PIDConstants(0.004, 0, 0), // Rotation constants 
+      new PIDConstants(0, 0, 0), // Rotation constants 
       Auton.MAX_SPEED, 
       ROBORADIUS, // Drive base radius (distance from center to furthest module) 
       new ReplanningConfig()
