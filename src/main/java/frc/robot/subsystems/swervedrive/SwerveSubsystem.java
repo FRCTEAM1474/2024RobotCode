@@ -101,7 +101,7 @@ public class SwerveSubsystem extends SubsystemBase {
   //logging
   PathPlannerLogging.setLogActivePathCallback((poses) -> swerveDrive.field.getObject("path").setPoses(poses));
 
-  SmartDashboard.putData("Field", swerveDrive.field);
+  //SmartDashboard.putData("Field", swerveDrive.field);
   
   }
 
