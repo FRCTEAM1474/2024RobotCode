@@ -8,24 +8,24 @@
       },
       "prevControl": null,
       "nextControl": {
-        "x": 1.2474029965124773,
-        "y": 3.5188035706516674
+        "x": 1.4058277945907427,
+        "y": 4.300774744894199
       },
       "isLocked": false,
       "linkedName": "speaker source"
     },
     {
       "anchor": {
-        "x": 3.969481795618881,
-        "y": 0.7845061423911242
+        "x": 2.2323610517528203,
+        "y": 4.07663013278245
       },
       "prevControl": {
-        "x": 2.969481795618881,
-        "y": 0.7845061423911242
+        "x": 1.419836832847727,
+        "y": 4.230729553609279
       },
       "nextControl": null,
       "isLocked": false,
-      "linkedName": null
+      "linkedName": "3rd note"
     }
   ],
   "rotationTargets": [],
@@ -45,7 +45,7 @@
   "reversed": false,
   "folder": null,
   "previewStartingState": {
-    "rotation": -59.85861444792467,
+    "rotation": -59.34933204294712,
     "velocity": 0
   },
   "useDefaultConstraints": true
