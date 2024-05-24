@@ -116,12 +116,12 @@ public class RobotContainer
       // Applies deadbands and inverts controls because joysticks
       // are back-right positive while robot
       // controls are front-left positive
-      () -> MathUtil.applyDeadband((-driverXbox.getRightY()),
+      () -> MathUtil.applyDeadband((-driverXbox.getLeftY()),
         OperatorConstants.LEFT_Y_DEADBAND),
-      () -> MathUtil.applyDeadband((-driverXbox.getRightX()),
+      () -> MathUtil.applyDeadband((-driverXbox.getLeftX()),
         OperatorConstants.LEFT_X_DEADBAND),
-      () -> -driverXbox.getLeftX(),
-      () -> -driverXbox.getLeftY());
+      () -> -driverXbox.getRightX(),
+      () -> -driverXbox.getRightY());
 
     AbsoluteDriveAdv closedAbsoluteDriveAdv = new AbsoluteDriveAdv(drivebase,
       () -> -MathUtil.applyDeadband(driverXbox.getRightY(),
@@ -136,11 +136,11 @@ public class RobotContainer
       driverXbox.povRight());
       
     AbsoluteFieldDrive closedFieldAbsoluteDrive = new AbsoluteFieldDrive(drivebase,
-      () -> MathUtil.applyDeadband(driverXbox.getRightY(),
+      () -> MathUtil.applyDeadband(driverXbox.getLeftY(),
         OperatorConstants.LEFT_Y_DEADBAND),
-      () -> MathUtil.applyDeadband(driverXbox.getRightX(),
+      () -> MathUtil.applyDeadband(driverXbox.getLeftX(),
         OperatorConstants.LEFT_X_DEADBAND),
-      () -> driverXbox.getLeftX()*360);
+      () -> driverXbox.getRightX()*360);
 
     TeleopDrive simClosedFieldRel = new TeleopDrive(drivebase,
       () -> MathUtil.applyDeadband(driverXbox.getLeftY(),
