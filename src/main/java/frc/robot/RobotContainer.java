@@ -124,12 +124,13 @@ public class RobotContainer
       () -> -driverXbox.getRightY());
 
     AbsoluteDriveAdv closedAbsoluteDriveAdv = new AbsoluteDriveAdv(drivebase,
-      () -> -MathUtil.applyDeadband(driverXbox.getRightY(),
+      () -> -MathUtil.applyDeadband(driverXbox.getLeftY(),
         OperatorConstants.LEFT_Y_DEADBAND),
-      () -> -MathUtil.applyDeadband(driverXbox.getRightX(),
+
+        () -> -MathUtil.applyDeadband(driverXbox.getLeftX(),
         OperatorConstants.LEFT_X_DEADBAND),
-      () -> -driverXbox.getLeftX(),
-      () -> -driverXbox.getLeftY(),
+      () -> -driverXbox.getRightX(),
+      () -> -driverXbox.getRightY(),
       driverXbox.povUp(),
       driverXbox.povDown(),
       driverXbox.povLeft(),
